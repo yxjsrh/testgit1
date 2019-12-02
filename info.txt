@@ -19,3 +19,8 @@
 
 
    err  错误错误
+
+  首先得到你要回退到的版本号:
+  git reflog
+  执行回退
+  git reset --hard yourCommitNum
