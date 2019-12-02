@@ -1,0 +1,68 @@
+  git init   初始化git仓库
+
+  git config --global user.name "zhaoyu"     配置git仓库自己的信息
+  git config --global user.email  "zy07091113@163.com"
+
+
+  git add ./代码1
+  添加需要添加的代码路径
+  git commit -m "说明添加了什么"   添加到仓库
+ 
+  git status  查看代码状态  查看当前代码有无存储到仓库
+
+  git add ./ 添加所有修改过的文件
+  git commit --all -m "所有修改过的全部提交"   
+
+   git log  查看日志 
+   git log --oneline   精简版日志
+
+
+
+   err  错误错误
+
+  首先得到你要回退到的版本号:
+  git reflog
+  执行回退
+  git reset --hard yourCommitNum
+
+  创建分支
+  git branch yourBrahchName
+  查看分支
+  git branch 
+  切换到xxx分支下
+  git checkout yourBrahchName   （可以在该分支下提交未完成的功能）
+  功能完成后将xxx分支合并到master中
+  git merge yourBrahchName   （有冲突的话需要自己去查看修复 重新提交）
+  删除分支
+  git branch -d zyteacher
+
+
+
+  ###  GitHub  当做服务器 上传代码
+        //   地址  ：https://github.com/yxjsrh/testgit1.git
+  上传github服务器
+  git push [地址]   master    将当前分支上传到远程的master分支上 
+  从github服务器上拿到
+  git pull [地址] master   从github服务器上拿到master分支
+
+   //克隆
+   git clone [地址]  
+
+
+
+###ssh方式上传代码
+- 公钥和私钥  两者之间是有关联的
+-生成公钥和私钥 
+  + ssh -keygen -t rsa -C "xxx@[邮箱]"
+
+
+### 相当于声明变量代替地址
+git remote add origin [地址]//git@github.com:yxjsrh/sshgittest2.git
+
+git push origin master  
+git push origin -u master   //-u  将当前分支与github上的master关联
+git pull   origin master
+
+
+
+
