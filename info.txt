@@ -13,3 +13,9 @@
   git add ./ 添加所有修改过的文件
   git commit --all -m "所有修改过的全部提交"   
 
+   git log  查看日志 
+   git log --oneline   精简版日志
+
+
+
+   err  错误错误
