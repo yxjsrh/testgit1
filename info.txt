@@ -24,3 +24,8 @@
   git reflog
   执行回退
   git reset --hard yourCommitNum
+
+  创建分支
+  git branch yourBrahchName
+  查看分支
+  git branch 
